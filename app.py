@@ -11,6 +11,6 @@ def hello_world():  # put application's code here
 if __name__ == '__main__':
     app.run()
 
-@app.route('hello')
+@app.route('/hello')
 def hello():
     return render_template('helloWorld.html')
