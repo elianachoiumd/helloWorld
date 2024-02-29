@@ -30,48 +30,26 @@ p {
     margin-top: 3%;
 }
 
-.button {
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+img.logo {
+    margin-left: 2%;
+    width: 15%;
+    height: auto;
     display: inline-block;
-    text-decoration: none;
-    background-color: #FF4343;
-    border-color: #FF4343;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: thin;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 3%;
-    margin-right: 3%;
+}
+
+.home_button {
+    color: #FF4343;
     font-family: "Calibri Light", sans-serif;
     font-size: .8vw;
-    box-shadow: 2px 2px 2px 0px black;
-    font-weight: bold;
-    color: #3A3A3B;
-    margin-top: 2%;
-}
-
-/*The following formats all data within the table*/
-td {
-    border-style: solid;
-    border-width: thin;
-    text-align: center;
-    border-color: #FF4343;
-    /*border-radius: 5px;*/
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-th {
-    border-style: solid;
-    border-width: thin;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-color: #FF4343;
-    /*border-radius: 5px;*/
-    padding-top: 1%;
-    padding-bottom: 1%;
+    text-decoration: none;
+    float: right;
+    margin-right: 5%;
 }
 
 .content {
@@ -132,6 +110,33 @@ th {
     padding-bottom: 9%;
 }
 
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FF4343;
+    border-color: #FF4343;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: "Calibri Light", sans-serif;
+    font-size: .8vw;
+    box-shadow: 2px 2px 2px 0px black;
+    font-weight: bold;
+    color: #3A3A3B;
+    margin-top: 2%;
+}
+
+#paragraph3 {
+    font-style: italic;
+}
+
+/*The following formats all data and aspects of the table*/
 table {
     width: 30%;
     margin-left: auto;
@@ -144,34 +149,25 @@ table {
     font-size: .8vw;
 }
 
-.header {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+td {
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-color: #FF4343;
+    /*border-radius: 5px;*/
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-img.logo {
-    margin-left: 2%;
-    width: 15%;
-    height: auto;
-    display: inline-block;
-}
-
-.home_button {
-    color: #FF4343;
-    font-family: "Calibri Light", sans-serif;
-    font-size: .8vw;
-    text-decoration: none;
-    float: right;
-    margin-right: 5%;
-}
-
-#paragraph3 {
-    font-style: italic;
-}
-
-ul {
-    list-style: none;
+th {
+    border-style: solid;
+    border-width: thin;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-color: #FF4343;
+    /*border-radius: 5px;*/
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .education {
@@ -189,6 +185,7 @@ ul {
 
 ul {
     margin-left: -10%;
+    list-style: none;
 }
 
 ol {
