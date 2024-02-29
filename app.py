@@ -15,6 +15,11 @@ if __name__ == '__main__':
 def hello():
     return render_template('helloWorld.html')
 
-@app.route('/about')
+# @app.route('/about')
+# def about():
+#     return render_template('about.html')
+
+@app.route('/about_css')
 def about():
-    return render_template('about.html')
+    return render_template('about_css.html')
+

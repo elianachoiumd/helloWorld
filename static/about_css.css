@@ -1,0 +1,200 @@
+/*This colors the entire background page a single color*/
+body {
+    background-color: #232323;
+}
+.header {
+    width: 100%;
+    height: 30%;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*This colors and formats all headers */
+h1, h2 {
+    font-family: "Calibri Light", sans-serif;
+    font-size: 2vw;
+    font-weight: normal;
+    color: #FF4343;
+}
+
+p, li {
+    font-family: "Calibri Light", sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+    color: #E4E4E4;
+}
+
+p {
+    line-height: 130%;
+    margin-top: 3%;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FF4343;
+    border-color: #FF4343;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: "Calibri Light", sans-serif;
+    font-size: .8vw;
+    box-shadow: 2px 2px 2px 0px black;
+    font-weight: bold;
+    color: #3A3A3B;
+    margin-top: 2%;
+}
+
+/*The following formats all data within the table*/
+td {
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-color: #FF4343;
+    /*border-radius: 5px;*/
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+th {
+    border-style: solid;
+    border-width: thin;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-color: #FF4343;
+    /*border-radius: 5px;*/
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.content {
+    display: block;
+    width: 100%;
+}
+
+.left {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    background-color: #3A3A3B;
+    border-radius: 5px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    box-shadow: 2px 2px 8px 0px black;
+}
+
+.right {
+    width: 50%;
+    display: inline-block;
+    margin-left: 2%;
+
+}
+
+/*This formats the right top portion of the right side of the page*/
+.right_top {
+    display: block;
+    background-color: #3A3A3B;
+    border-radius: 5px;
+    padding-left: 6%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-shadow: 2px 2px 5px 0px black;
+    width: 100%;
+}
+
+/*This formats the right bottom portion of the right side of the page*/
+.right_bottom {
+    margin-top: 3%;
+    width: 100%;
+    display: inline-block;
+    background-color: #3A3A3B;
+    border-radius: 5px;
+    padding-left: 6%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-shadow: 2px 2px 5px 0px black;
+    padding-bottom: 9%;
+}
+
+table {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #FF4343;
+    border-radius: 5px;
+    color: #E4E4E4;
+    font-family: "Calibri Light", sans-serif;
+    font-size: .8vw;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+img.logo {
+    margin-left: 2%;
+    width: 15%;
+    height: auto;
+    display: inline-block;
+}
+
+.home_button {
+    color: #FF4343;
+    font-family: "Calibri Light", sans-serif;
+    font-size: .8vw;
+    text-decoration: none;
+    float: right;
+    margin-right: 5%;
+}
+
+#paragraph3 {
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+}
+
+.education {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.extra_curr {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+ul {
+    margin-left: -10%;
+}
+
+ol {
+    margin-left: -6%;
+}
+
+li {
+    margin-bottom: 1.5%;
+}
