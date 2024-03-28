@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Title of the document</title>
-</head>
-<body>
 
+    {% extends "base.html" %}
 
-</body>
-</html>
+    {% block page_content %}
+        <div class="mt-5">
+            <h4>Your Favorite Course</h4>
+            <p>You entered your favorite course as: {{ request.args.get('course') }} {{ request.args.get('course_number') }}</p>
+        </div>
+
+    {% endblock %}
