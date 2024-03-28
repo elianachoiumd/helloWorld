@@ -1,10 +1,9 @@
-.header {
-    background-color: #FF4343;
-    color: white;
-    width: 100%;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-bottom: 2%;
-    font-family: "Times New Roman", serif;
+footer {
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
+.container.child {
+    margin-top: 5%;
+    width: 40%;
+}
