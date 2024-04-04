@@ -11,7 +11,7 @@ class Student(db.Model):
     last_name = db.Column(db.String(50), nullable=False)
     major_id = db.Column(db.Integer, db.ForeignKey('major.major_id'))
     birth_date = db.Column(db.DateTime, nullable=False)
-    email = db.Column(db.VARCHAR(100), nullable=False)
+    email = db.Column(db.VARCHAR(100), unique=True, nullable=False)
     num_credits_completed = db.Column(db.Integer, nullable=False)
     gpa = db.Column(db.Float, nullable=False)
     is_honors = db.Column(db.Boolean, nullable=False)
