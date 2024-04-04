@@ -51,6 +51,15 @@
   </div>
 
   <div class="col-md-4">
+    <label for="email" class="form-label"><strong>Email</strong></label>
+    {% if action and action in ['create', 'update'] %}
+    <input type="email" class="form-control" id="email" name="email" maxlength="100" value="{{ student['email'].str('\w+@\w+\.\w{3}') if student else '' }}" required>
+    {% else %}
+        <br>{{ student['email'].str('\w+@\w+\.\w{3}') }}
+    {% endif %}
+  </div>
+
+  <div class="col-md-4">
     <label for="major_id" class="form-label"><strong>Major</strong></label>
     {% if action and action in ['create', 'update'] %}
     <select name="major_id" id="major_id" class="form-select form-select-md" aria-label=".form-select-md example">
