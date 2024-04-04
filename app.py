@@ -35,7 +35,7 @@ def student_view(student_id):
         flash(f'Student attempting to be viewed could not be found!', 'error')
         return redirect(url_for('student_view_all'))
 
-#updated database by adding field to store email when student creates account
+
 @app.route('/student/create', methods=['GET', 'POST'])
 def student_create():
     if request.method == 'GET':
@@ -47,12 +47,14 @@ def student_create():
         first_name = request.form['first_name']
         last_name = request.form['last_name']
         major_id = request.form['major_id']
-        birth_date = request.form['birth_date']
         email = request.form['email']
+
+        birth_date = request.form['birth_date']
         is_honors = True if 'is_honors' in request.form else False
 
         student = Student(first_name=first_name, last_name=last_name, major_id=major_id,
-                          birth_date=dt.strptime(birth_date, '%Y-%m-%d'), email=email, is_honors=is_honors)
+                          email=email, birth_date=dt.strptime(birth_date, '%Y-%m-%d'),
+                          is_honors=is_honors)
         db.session.add(student)
         db.session.commit()
         flash(f'{first_name} {last_name} was successfully added!', 'success')
@@ -78,13 +80,13 @@ def student_edit(student_id):
 
     elif request.method == 'POST':
         student = Student.query.filter_by(student_id=student_id).first()
-        # updated database by adding field to store email when student updates account
+
         if student:
             student.first_name = request.form['first_name']
             student.last_name = request.form['last_name']
             student.major_id = request.form['major_id']
-            student.birthdate = dt.strptime(request.form['birth_date'], '%Y-%m-%d')
             student.email = request.form['email']
+            student.birthdate = dt.strptime(request.form['birth_date'], '%Y-%m-%d')
             student.num_credits_completed = request.form['num_credits_completed']
             student.gpa = request.form['gpa']
             student.is_honors = True if 'is_honors' in request.form else False
