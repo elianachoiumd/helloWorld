@@ -53,9 +53,9 @@
   <div class="col-md-4">
     <label for="email" class="form-label"><strong>Email</strong></label>
     {% if action and action in ['create', 'update'] %}
-    <input type="email" class="form-control" id="email" name="email" maxlength="100" value="{{ student['email'].str('\w+@\w+\.\w{3}') if student else '' }}" required>
+    <input type="email" class="form-control" id="email" name="email" maxlength="100" value="{{ student['email'] if student else '' }}" required>
     {% else %}
-        <br>{{ student['email'].str('\w+@\w+\.\w{3}') }}
+        <br>{{ student['email'] }}
     {% endif %}
   </div>
 
